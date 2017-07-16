@@ -1,3 +1,4 @@
+{% raw %}
 #!/bin/bash
 
 RRDPATH=/var/lib/mailgraph
@@ -31,3 +32,4 @@ then
     echo ${FIELDS[$i-1]}:${VALUES[$i-1]}
   done
 fi
+{% endraw %}
