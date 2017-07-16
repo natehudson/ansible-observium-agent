@@ -45,3 +45,6 @@
 
 - include: tasks/bind.yml
   when: obs_agent_bind_enable == true
+
+- include: tasks/postfix_mailgraph.yml
+  when: obs_agent_postfix_mailgraph_enable == true
