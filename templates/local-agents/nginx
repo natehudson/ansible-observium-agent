@@ -2,8 +2,7 @@
 import urllib2
 import re
 
-
-data = urllib2.urlopen('http://127.0.0.1/nginx-status').read()
+data = urllib2.urlopen('{{ obs_agent_nginx_status_url }}').read()
 
 params = {}
 
