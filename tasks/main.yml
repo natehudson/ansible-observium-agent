@@ -37,6 +37,9 @@
 - include: tasks/apache.yml
   when: obs_agent_apache_enable == true
 
+- include: tasks/nginx.yml
+  when: obs_agent_nginx_enable == true
+
 - include: tasks/pg.yml
   when: obs_agent_pg_enable == true
 

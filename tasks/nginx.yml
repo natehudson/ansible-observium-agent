@@ -1,0 +1,5 @@
+---
+
+# nginx local agent
+- name: deploy nginx local agent
+  template: src=local-agents/nginx dest=/usr/lib/observium_agent/local/nginx owner=root group=root mode=0655  
