@@ -26,7 +26,7 @@ if ( -f $CACHEFILE && time - (stat( $CACHEFILE ))[9] < $CACHETIME) {
         close INFILE;
 } else {
         # grab the status URL (fresh data)
-        @data = split /(\n)/, LWP::Simple::get( 'http://localhost/server-status?auto' )
+        @data = split /(\n)/, LWP::Simple::get( '{{ obs_agent_apache_status_url }}' )
                 or die "Data fetch failure.\n";
 
         # write file

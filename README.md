@@ -22,11 +22,16 @@ observium_host: host running observium ( defaults to 127.0.0.1 )
 obs_agent_pg_enable: boolean (default false)
 
 obs_agent_apache_enable: boolean (default false)
+obs_agent_apache_status_url: string (default "http://localhost/server-status?auto")
+obs_agent_apache_status_allow: string (default "127.0.0.1 ::1")
+
+obs_agent_nginx_enable: boolean (default false)
 
 obs_agent_bind_enable: boolean (default false)
 
-All variables can be found in defaults/main.yml
+obs_agent_postfix_mailgraph_enable: boolean (default false)
 
+All variables can be found in defaults/main.yml
 
 Example Playbook
 ----------------
